@@ -1,0 +1,18 @@
+{   
+    "path1": "./roberta_output/finetune/base_model/#model1_name_seed#seed/checkpoint-#model1_step",
+    "path2": "./roberta_output/finetune/base_model/#model2_name_seed#seed/checkpoint-#model2_step",
+    "output_dir": "./roberta_output/finetune/check_itp/#name_seed#seed",
+    "train_file": "./dataset/#task/train.jsonl",
+    "validation_file": "./dataset/#task/dev.jsonl",
+    "test_file": "./dataset/#task/test.jsonl",
+    "do_eval": true,
+    "do_predict": true,
+    "do_train": false,
+    "metric_for_best_model": "eval_accuracy",
+    "model_name_or_path": "./pretrained_models/roberta_base_wb",
+    "overwrite_output_dir": true,
+    "per_device_eval_batch_size": 16,
+    "push_to_hub": false,
+    "seed": #seed,
+    "tokenizer_name": "roberta-base"
+}
